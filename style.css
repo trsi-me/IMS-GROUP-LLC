@@ -232,8 +232,14 @@ img {
     transition: transform var(--transition-fast);
     position: absolute;
     left: 1rem;
+    right: auto;
     width: 36px;
     height: 36px
+}
+
+[dir="ltr"] .nav-toggle {
+    left: auto;
+    right: 1rem
 }
 
 .nav-toggle:hover {
@@ -376,8 +382,7 @@ img {
         font-size: 0.8rem
     }
 
-    .lang-dropdown.active,
-    .lang-selector[aria-expanded="true"]+.lang-dropdown {
+    .lang-dropdown.active, .lang-selector[aria-expanded="true"]+.lang-dropdown {
         transform: translateX(-50%) translateY(0) !important
     }
 
@@ -837,7 +842,7 @@ img {
 }
 
 .team-view-btn-wrap {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     text-align: center
 }
 
@@ -1965,8 +1970,16 @@ img {
 .partnership-read-time {
     font-size: 0.75rem;
     color: var(--muted);
+    text-align: right !important;
     font-weight: var(--font-weight-medium);
-    margin-bottom: 0.75rem
+    margin-bottom: 0.75rem;
+    width: 100%;
+    align-self: stretch;
+    box-sizing: border-box
+}
+
+[dir="ltr"] .partnership-read-time {
+    text-align: left !important
 }
 
 .partnership-read-more {
@@ -2776,11 +2789,15 @@ img {
 }
 
 .similar-partnership-image {
-    width: 80px;
-    margin: 0 auto 0.75rem;
-    border-radius: 10px;
+    width: 220px;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
     overflow: hidden;
     flex-shrink: 0
+}
+
+.similar-partnership-hackora .similar-partnership-image {
+    width: 80px
 }
 
 .similar-partnership-image img {
@@ -2806,7 +2823,7 @@ img {
 
 @media screen and (min-width: 361px) {
     .similar-partnerships {
-        padding: 3rem 0 3.5rem
+        padding: 3rem 1.2rem 3.5rem
     }
 
     .similar-partnerships-title {
@@ -2833,9 +2850,10 @@ img {
         border-radius: 14px
     }
 
-    .similar-partnership-image {
-        width: 95px;
-        margin-bottom: 1rem
+    .similar-partnership-image { margin-bottom: 1rem }
+
+    .similar-partnership-hackora .similar-partnership-image {
+        width: 70px
     }
 
     .similar-partnership-card h3 {
@@ -2867,6 +2885,10 @@ img {
         width: 120px;
         margin-bottom: 1rem;
         border-radius: 12px
+    }
+
+    .similar-partnership-hackora .similar-partnership-image {
+        width: 70px
     }
 
     .similar-partnership-card h3 {
@@ -2907,6 +2929,10 @@ img {
         width: 160px
     }
 
+    .similar-partnership-hackora .similar-partnership-image {
+        width: 95px
+    }
+
     .similar-partnership-card h3 {
         font-size: 1.1rem
     }
@@ -2931,7 +2957,11 @@ img {
     }
 
     .similar-partnership-image {
-        width: 200px
+        width: 420px
+    }
+
+    .similar-partnership-hackora .similar-partnership-image {
+        width: 160px
     }
 }
 
@@ -3915,19 +3945,12 @@ img {
         padding-right: 0.5rem
     }
 
-    .values-grid,
-    .vision-mission,
-    .brands-grid,
-    .departments-grid {
+    .values-grid, .vision-mission, .brands-grid, .departments-grid {
         padding-left: 0.5rem;
         padding-right: 0.5rem
     }
 
-    .value-item,
-    .vm-card,
-    .brand-card,
-    .dept-card,
-    .management-intro-card {
+    .value-item, .vm-card, .brand-card, .dept-card, .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem
     }
@@ -3937,8 +3960,7 @@ img {
         padding-right: 0.5rem
     }
 
-    .contact-card,
-    .contact-form {
+    .contact-card, .contact-form {
         margin-left: 0.5rem;
         margin-right: 0.5rem
     }
@@ -3965,9 +3987,7 @@ img {
         float: none
     }
 
-    .contact-form .form-group input,
-    .contact-form .form-group select,
-    .contact-form .form-group textarea {
+    .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
         width: 100% !important;
         display: block !important;
         box-sizing: border-box;
@@ -4070,15 +4090,13 @@ img {
         font-size: 0.65rem
     }
 
-    .values-title,
-    .communicate-title {
+    .values-title, .communicate-title {
         font-size: 0.95rem;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem
     }
 
-    .values-title::after,
-    .communicate-title::after {
+    .values-title::after, .communicate-title::after {
         width: 40px;
         height: 2px
     }
@@ -4246,54 +4264,33 @@ img {
         font-size: 1.1rem
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         padding: 0.875rem !important
     }
 
-    .founder-card .team-image,
-    .evp-card .team-image,
-    .legal-owner-card .team-image,
-    .business-manager-card .team-image {
+    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image {
         border-width: 3px
     }
 
-    .founder-card .team-image-placeholder,
-    .evp-card .team-image-placeholder,
-    .legal-owner-card .team-image-placeholder,
-    .business-manager-card .team-image-placeholder {
+    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder {
         width: 60px;
         height: 60px;
         border-width: 3px
     }
 
-    .founder-card .team-image-placeholder i,
-    .evp-card .team-image-placeholder i,
-    .legal-owner-card .team-image-placeholder i,
-    .business-manager-card .team-image-placeholder i {
+    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i {
         font-size: 1.5rem
     }
 
-    .founder-card h3,
-    .evp-card h3,
-    .legal-owner-card h3,
-    .business-manager-card h3 {
+    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3 {
         font-size: 0.8rem
     }
 
-    .founder-card .team-role,
-    .evp-card .team-role,
-    .legal-owner-card .team-role,
-    .business-manager-card .team-role {
+    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role {
         font-size: 0.75rem
     }
 
-    .founder-card .team-description,
-    .evp-card .team-description,
-    .legal-owner-card .team-description,
-    .business-manager-card .team-description {
+    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description {
         font-size: 0.7rem
     }
 
@@ -4360,9 +4357,7 @@ img {
         margin-bottom: 0.4rem
     }
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-group input, .form-group select, .form-group textarea {
         font-size: 0.65rem;
         padding: 0.5rem
     }
@@ -4389,8 +4384,7 @@ img {
         font-size: 0.9rem
     }
 
-    .footer-links a,
-    .footer-contact a {
+    .footer-links a, .footer-contact a {
         font-size: 0.8rem
     }
 
@@ -4421,7 +4415,13 @@ img {
     .nav-toggle {
         display: flex;
         left: 0.75rem;
+        right: auto;
         padding: 0.4rem
+    }
+
+    [dir="ltr"] .nav-toggle {
+        left: auto;
+        right: 0.75rem
     }
 
     .logo-img {
@@ -4643,10 +4643,7 @@ img {
         margin: 0
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -4715,9 +4712,7 @@ img {
         font-size: 0.8rem
     }
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-group input, .form-group select, .form-group textarea {
         font-size: 0.8rem;
         padding: 0.65rem
     }
@@ -4767,9 +4762,7 @@ img {
         margin-bottom: 1.75rem
     }
 
-    .contact-form .form-group input,
-    .contact-form .form-group select,
-    .contact-form .form-group textarea {
+    .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
         width: 100%;
         display: block;
         box-sizing: border-box
@@ -4815,10 +4808,7 @@ img {
         padding-right: 1.5rem
     }
 
-    .values-grid,
-    .vision-mission,
-    .brands-grid,
-    .departments-grid {
+    .values-grid, .vision-mission, .brands-grid, .departments-grid {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
@@ -5011,7 +5001,13 @@ img {
     .nav-toggle {
         display: flex;
         left: 0.75rem;
+        right: auto;
         padding: 0.4rem
+    }
+
+    [dir="ltr"] .nav-toggle {
+        left: auto;
+        right: 0.75rem
     }
 
     .logo-img {
@@ -5111,8 +5107,8 @@ img {
     }
 
     .partnerships.partnerships-page {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem
+        padding-left: 0.6rem;
+        padding-right: 0.6rem
     }
 
     .executive-interface-section .management-cards {
@@ -5365,10 +5361,7 @@ img {
         margin: 0
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5377,26 +5370,17 @@ img {
         margin: 0
     }
 
-    .founder-card .team-image,
-    .evp-card .team-image,
-    .legal-owner-card .team-image,
-    .business-manager-card .team-image {
+    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image {
         border-width: 3px
     }
 
-    .founder-card .team-image-placeholder,
-    .evp-card .team-image-placeholder,
-    .legal-owner-card .team-image-placeholder,
-    .business-manager-card .team-image-placeholder {
+    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder {
         width: 80px;
         height: 80px;
         border-width: 3px
     }
 
-    .founder-card .team-image-placeholder i,
-    .evp-card .team-image-placeholder i,
-    .legal-owner-card .team-image-placeholder i,
-    .business-manager-card .team-image-placeholder i {
+    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i {
         font-size: 2rem
     }
 
@@ -5459,9 +5443,7 @@ img {
         font-size: 0.8rem
     }
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-group input, .form-group select, .form-group textarea {
         font-size: 0.8rem;
         padding: 0.65rem
     }
@@ -5518,9 +5500,7 @@ img {
         margin-bottom: 1.75rem
     }
 
-    .contact-form .form-group input,
-    .contact-form .form-group select,
-    .contact-form .form-group textarea {
+    .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
         width: 100%;
         display: block;
         box-sizing: border-box
@@ -5542,10 +5522,6 @@ img {
         margin-right: 1.5rem
     }
 
-    .partnerships.partnerships-page {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem
-    }
 
     .executive-interface-section .management-cards {
         grid-template-columns: 1fr
@@ -5757,26 +5733,17 @@ img {
         font-size: 0.8rem
     }
 
-    .founder-card .team-image,
-    .evp-card .team-image,
-    .legal-owner-card .team-image,
-    .business-manager-card .team-image {
+    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image {
         border-width: 3.5px
     }
 
-    .founder-card .team-image-placeholder,
-    .evp-card .team-image-placeholder,
-    .legal-owner-card .team-image-placeholder,
-    .business-manager-card .team-image-placeholder {
+    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder {
         width: 90px;
         height: 90px;
         border-width: 3.5px
     }
 
-    .founder-card .team-image-placeholder i,
-    .evp-card .team-image-placeholder i,
-    .legal-owner-card .team-image-placeholder i,
-    .business-manager-card .team-image-placeholder i {
+    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i {
         font-size: 2.25rem
     }
 
@@ -5834,9 +5801,7 @@ img {
         font-size: 0.9rem
     }
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-group input, .form-group select, .form-group textarea {
         font-size: 0.9rem;
         padding: 0.75rem
     }
@@ -5868,19 +5833,12 @@ img {
         padding-right: 0.5rem
     }
 
-    .values-grid,
-    .vision-mission,
-    .brands-grid,
-    .departments-grid {
+    .values-grid, .vision-mission, .brands-grid, .departments-grid {
         padding-left: 0.5rem;
         padding-right: 0.5rem
     }
 
-    .value-item,
-    .vm-card,
-    .brand-card,
-    .dept-card,
-    .management-intro-card {
+    .value-item, .vm-card, .brand-card, .dept-card, .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem
     }
@@ -5890,8 +5848,7 @@ img {
         padding-right: 0.5rem
     }
 
-    .contact-card,
-    .contact-form {
+    .contact-card, .contact-form {
         margin-left: 0.5rem;
         margin-right: 0.5rem
     }
@@ -5915,7 +5872,13 @@ img {
 
     .nav-toggle {
         display: flex;
-        left: 1.5rem
+        left: 1.5rem;
+        right: auto
+    }
+
+    [dir="ltr"] .nav-toggle {
+        left: auto;
+        right: 1.5rem
     }
 
     .logo-img {
@@ -6067,10 +6030,7 @@ img {
         gap: 1.75rem
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -6114,9 +6074,7 @@ img {
         margin-bottom: 1.75rem
     }
 
-    .contact-form .form-group input,
-    .contact-form .form-group select,
-    .contact-form .form-group textarea {
+    .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
         width: 100%;
         display: block;
         box-sizing: border-box
@@ -6134,19 +6092,12 @@ img {
         padding-right: 0.5rem
     }
 
-    .values-grid,
-    .vision-mission,
-    .brands-grid,
-    .departments-grid {
+    .values-grid, .vision-mission, .brands-grid, .departments-grid {
         padding-left: 0.5rem;
         padding-right: 0.5rem
     }
 
-    .value-item,
-    .vm-card,
-    .brand-card,
-    .dept-card,
-    .management-intro-card {
+    .value-item, .vm-card, .brand-card, .dept-card, .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem
     }
@@ -6156,8 +6107,7 @@ img {
         padding-right: 0.5rem
     }
 
-    .contact-card,
-    .contact-form {
+    .contact-card, .contact-form {
         margin-left: 0.5rem;
         margin-right: 0.5rem
     }
@@ -6181,7 +6131,13 @@ img {
 
     .nav-toggle {
         display: flex;
-        left: 2rem
+        left: 2rem;
+        right: auto
+    }
+
+    [dir="ltr"] .nav-toggle {
+        left: auto;
+        right: 2rem
     }
 
     .logo-img {
@@ -6320,10 +6276,7 @@ img {
         gap: 2rem
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -6386,9 +6339,7 @@ img {
         margin-bottom: 1.75rem
     }
 
-    .contact-form .form-group input,
-    .contact-form .form-group select,
-    .contact-form .form-group textarea {
+    .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
         width: 100%;
         display: block;
         box-sizing: border-box
@@ -6431,7 +6382,13 @@ img {
 
     .nav-toggle {
         display: flex;
-        left: 1.5rem
+        left: 1.5rem;
+        right: auto
+    }
+
+    [dir="ltr"] .nav-toggle {
+        left: auto;
+        right: 1.5rem
     }
 
     .lang-selector-wrapper {
@@ -6579,10 +6536,7 @@ img {
         gap: 2rem
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important
     }
@@ -6599,7 +6553,13 @@ img {
 
     .nav-toggle {
         display: flex;
-        left: 1.5rem
+        left: 1.5rem;
+        right: auto
+    }
+
+    [dir="ltr"] .nav-toggle {
+        left: auto;
+        right: 1.5rem
     }
 
     .nav-container {
@@ -7018,10 +6978,7 @@ img {
         min-width: 240px
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important
     }
@@ -7108,9 +7065,7 @@ img {
         font-size: 0.9rem
     }
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-group input, .form-group select, .form-group textarea {
         font-size: 0.9rem
     }
 
@@ -7129,8 +7084,7 @@ img {
         font-size: 0.95rem
     }
 
-    .footer-links li a,
-    .footer-contact li a {
+    .footer-links li a, .footer-contact li a {
         font-size: 0.9rem
     }
 
@@ -7147,7 +7101,7 @@ img {
     }
 
     .similar-partnerships {
-        padding: 3rem 0 4rem
+        padding: 3rem 1.2rem 4rem
     }
 
     .similar-partnerships-title {
@@ -7155,7 +7109,11 @@ img {
     }
 
     .similar-partnership-image {
-        width: 130px
+        width: 300px
+    }
+
+    .similar-partnership-hackora .similar-partnership-image {
+        width: 120px
     }
 
     .similar-partnership-card h3 {
@@ -7369,10 +7327,7 @@ img {
         max-width: 320px
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 700px !important;
         min-width: 600px !important
     }
@@ -7613,10 +7568,7 @@ img {
         padding: 1.75rem
     }
 
-    .founder-card,
-    .evp-card,
-    .legal-owner-card,
-    .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
         max-width: 700px !important;
         min-width: 600px !important
     }
