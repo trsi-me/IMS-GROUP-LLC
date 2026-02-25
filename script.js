@@ -449,5 +449,4 @@ function updateCopyrightYear() {
     }
 }
 
-// تشغيل عند تحميل الصفحة بالكامل كحل احتياطي
 window.addEventListener('load', updateCopyrightYear);
