@@ -722,6 +722,19 @@ img {
 .cta-button:active {
     transform: translateY(-1px) }
 
+.team-view-btn-wrap {
+    margin-top: 1.5rem;
+    text-align: center }
+
+.team-view-btn {
+    width: auto !important;
+    display: inline-flex !important;
+    gap: 0.5rem;
+    padding: 0.65rem 1.25rem !important }
+
+.team-view-btn i {
+    font-size: 1rem }
+
 .hero-image {
     display: flex;
     justify-content: center;
@@ -857,6 +870,25 @@ img {
 @media screen and (min-width: 501px) {
     .about-intro {
         margin-bottom: 4rem } }
+
+.old-identity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2.5rem 0 3rem }
+
+.old-logo-img {
+    max-width: 180px;
+    height: auto;
+    opacity: 0.85;
+    filter: grayscale(20%) }
+
+.old-identity-label {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-medium);
+    margin: 0 }
 
 .vision-mission {
     display: grid;
@@ -1100,6 +1132,28 @@ img {
     transition: transform var(--transition-base);
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3)) }
 
+.brand-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 2px dashed var(--glass-border);
+    border-radius: 12px;
+    color: var(--text-muted);
+    transition: all var(--transition-base) }
+
+.brand-image-placeholder i {
+    font-size: 3rem;
+    opacity: 0.5 }
+
+.brand-card:hover .brand-image-placeholder {
+    border-color: var(--accent);
+    color: var(--accent);
+    opacity: 0.9 }
+
 .brand-card:hover .brand-card-image {
     transform: scale(1.05) }
 
@@ -1202,10 +1256,48 @@ img {
     color: #FF9800;
     border: 1px solid rgba(255, 152, 0, 0.4) }
 
+.status-launch {
+    background: rgba(13, 148, 136, 0.2);
+    color: #0D9488;
+    border: 1px solid rgba(13, 148, 136, 0.45) }
+
 .status-paused {
     background: rgba(158, 158, 158, 0.2);
     color: #9E9E9E;
     border: 1px solid rgba(158, 158, 158, 0.4) }
+
+.former-member-card .team-image-wrapper {
+    position: relative }
+
+.former-member-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    left: auto;
+    padding: 0.4rem 0.75rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-bold);
+    white-space: nowrap;
+    letter-spacing: 0.4px;
+    background: #1f2937;
+    color: #fff;
+    border: 2px solid #111827;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+    z-index: 2 }
+
+[dir="rtl"] .former-member-badge {
+    right: 0.5rem;
+    left: auto }
+
+[dir="ltr"] .former-member-badge {
+    left: 0.5rem;
+    right: auto }
+
+@media screen and (min-width: 768px) {
+    .former-member-badge {
+        padding: 0.6rem 1.25rem;
+        font-size: 1rem } }
 
 .brand-link {
     display: inline-block;
@@ -1265,8 +1357,29 @@ img {
     color: #ffffff !important;
     box-shadow: 0 8px 24px rgba(103, 155, 120, 0.25) !important }
 
+.brand-link-shafrz {
+    background: linear-gradient(135deg, #9f4fff 0%, #b366ff 100%) !important;
+    color: #ffffff !important }
+
+.brand-link-shafrz:hover:not(:disabled) {
+    box-shadow: 0 12px 32px rgba(159, 79, 255, 0.4) !important }
+
 .brand-link-minsad:hover:not(:disabled) {
     box-shadow: 0 12px 32px rgba(103, 155, 120, 0.4) !important }
+
+.brand-link-hackora {
+    background: linear-gradient(135deg, #FF92ea 0%, #ffb3f0 100%) !important;
+    color: #ffffff !important }
+
+.brand-link-hackora:hover:not(:disabled) {
+    box-shadow: 0 12px 32px rgba(255, 146, 234, 0.4) !important }
+
+.brand-link-nimra {
+    background: linear-gradient(135deg, #0c5225 0%, #166534 100%) !important;
+    color: #ffffff !important }
+
+.brand-link-nimra:hover:not(:disabled) {
+    box-shadow: 0 12px 32px rgba(12, 82, 37, 0.4) !important }
 
 .brand-achievements,
 .brand-development,
@@ -1476,8 +1589,80 @@ img {
     background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg) 100%);
     position: relative }
 
+.team.team-page {
+    padding-top: 8rem;
+    min-height: 100vh }
+
+.members-section-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: #6b7280;
+    margin: 0 0 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #9ca3af;
+    width: fit-content }
+
+.members-divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4rem 0 2.5rem;
+    padding: 0 1rem }
+
+.members-divider-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #9ca3af, transparent);
+    opacity: 0.8 }
+
+.members-divider-text {
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    color: #6b7280;
+    padding: 0 1rem;
+    white-space: nowrap }
+
+.former-members-cards {
+    margin-top: 0;
+    padding-top: 0 }
+
+
+@media screen and (max-width: 768px) {
+    .members-section-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem }
+
+    .members-divider {
+        margin: 3rem 0 2rem } }
+
 .management-section {
-    margin-bottom: 2rem }
+    margin-bottom: 0 }
+
+.management-intro-card {
+    margin-bottom: 2.5rem }
+
+.executive-interface-section {
+    margin-bottom: 2.5rem }
+
+.executive-interface-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    position: relative }
+
+.executive-interface-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+    border-radius: 2px }
 
 .management-title {
     font-size: 1.5rem;
@@ -1508,7 +1693,9 @@ img {
     padding: 0 3rem }
 
 .founder-card,
-.evp-card {
+.evp-card,
+.legal-owner-card,
+.business-manager-card {
     max-width: 700px !important;
     min-width: 600px !important;
     width: 100%;
@@ -1564,10 +1751,6 @@ img {
     box-shadow: var(--shadow-accent);
     transition: transform var(--transition-base) }
 
-@media screen and (max-width: 768px) {
-    .team-image {
-        height: 100px;
-        width: 100px } }
 
 .team-card:hover .team-image {
     transform: scale(1.05) }
@@ -1607,7 +1790,9 @@ img {
     flex-direction: column }
 
 .founder-card .team-info,
-.evp-card .team-info {
+.evp-card .team-info,
+.legal-owner-card .team-info,
+.business-manager-card .team-info {
     justify-content: space-between }
 
 .team-card h3 {
@@ -1766,9 +1951,7 @@ img {
     box-shadow: var(--shadow-md);
     position: relative;
     overflow: hidden;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100% }
+    box-sizing: border-box }
 
 .dept-card::after {
     content: '';
@@ -1993,7 +2176,7 @@ img {
 
 .submit-button {
     width: 100%;
-    padding: 1.125rem;
+    padding: 1.125rem 1.5rem;
     background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
     color: var(--bg);
     border: none;
@@ -2005,7 +2188,22 @@ img {
     transition: all var(--transition-base);
     box-shadow: var(--shadow-accent);
     position: relative;
-    overflow: hidden }
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem }
+
+.submit-button i {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    transition: transform var(--transition-base) }
+
+.submit-button:hover:not(:disabled) i {
+    transform: translateX(3px) }
+
+[dir="rtl"] .submit-button:hover:not(:disabled) i {
+    transform: translateX(-3px) }
 
 .submit-button::before {
     content: '';
@@ -2233,7 +2431,8 @@ img {
     .value-item,
     .vm-card,
     .brand-card,
-    .dept-card {
+    .dept-card,
+    .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem }
 
@@ -2443,7 +2642,9 @@ img {
     .team-image-wrapper {
         margin-bottom: 1rem }
 
-    .team-image,
+    .team-image {
+        border-width: 3px }
+
     .team-image-placeholder {
         width: 60px;
         height: 60px;
@@ -2481,31 +2682,47 @@ img {
         font-size: 1.1rem }
 
     .founder-card,
-    .evp-card {
+    .evp-card,
+    .legal-owner-card,
+    .business-manager-card {
         padding: 0.875rem !important }
 
     .founder-card .team-image,
-    .founder-card .team-image-placeholder,
     .evp-card .team-image,
-    .evp-card .team-image-placeholder {
+    .legal-owner-card .team-image,
+    .business-manager-card .team-image {
+        border-width: 3px }
+
+    .founder-card .team-image-placeholder,
+    .evp-card .team-image-placeholder,
+    .legal-owner-card .team-image-placeholder,
+    .business-manager-card .team-image-placeholder {
         width: 60px;
         height: 60px;
         border-width: 3px }
 
     .founder-card .team-image-placeholder i,
-    .evp-card .team-image-placeholder i {
+    .evp-card .team-image-placeholder i,
+    .legal-owner-card .team-image-placeholder i,
+    .business-manager-card .team-image-placeholder i {
         font-size: 1.5rem }
 
     .founder-card h3,
-    .evp-card h3 {
+    .evp-card h3,
+    .legal-owner-card h3,
+    .business-manager-card h3 {
         font-size: 0.8rem }
 
     .founder-card .team-role,
-    .evp-card .team-role {
+    .evp-card .team-role,
+    .legal-owner-card .team-role,
+    .business-manager-card .team-role {
         font-size: 0.75rem }
 
     .founder-card .team-description,
-    .evp-card .team-description {
+    .evp-card .team-description,
+    .legal-owner-card .team-description,
+    .business-manager-card .team-description {
         font-size: 0.7rem }
 
     .dept-card {
@@ -2749,7 +2966,7 @@ img {
         padding: 1rem }
 
     .brand-header h3 {
-        font-size: 1rem }
+        font-size: 0.8rem }
 
     .brand-description {
         font-size: 0.75rem }
@@ -2784,7 +3001,9 @@ img {
         margin: 0 }
 
     .founder-card,
-    .evp-card {
+    .evp-card,
+    .legal-owner-card,
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -2792,7 +3011,6 @@ img {
         padding: 1.25rem;
         margin: 0; }
 
-    .team-image,
     .team-image-placeholder {
         width: 80px;
         height: 80px }
@@ -2809,7 +3027,6 @@ img {
     .team-description {
         font-size: 0.8rem }
 
-    .team-image,
     .team-image-placeholder {
         width: 100px;
         height: 100px }
@@ -2858,8 +3075,6 @@ img {
         box-sizing: border-box }
 
     .dept-card {
-        width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         padding: 1.5rem }
 
@@ -2926,6 +3141,10 @@ img {
         padding-left: 1.5rem;
         padding-right: 1.5rem }
 
+    .management-intro-card {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem }
+
     .contact-content {
         padding-left: 1.5rem;
         padding-right: 1.5rem } }
@@ -2970,19 +3189,20 @@ img {
 .brands {
     padding: 3rem 0 }
 
-.brand-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem }
+@media screen and (min-width: 501px) {
+    .brand-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem }
 
-.brand-header h3 {
-    font-size: 1.3rem }
+    .brand-header h3 {
+        font-size: 1.3rem }
+
+    .brand-description {
+        font-size: 0.9rem } }
 
 .brand-tagline {
     font-size: 0.85rem }
-
-.brand-description {
-    font-size: 0.9rem }
 
 .programs {
     padding: 3rem 0 }
@@ -2994,13 +3214,12 @@ img {
     padding: 3rem 0 1rem }
 
 .management-section {
-    margin-bottom: 3rem }
+    margin-bottom: 0 }
 
 @media screen and (min-width: 501px) {
     .management-title {
         font-size: 1.5rem } }
 
-.team-image,
 .team-image-placeholder {
     width: 150px;
     height: 150px }
@@ -3338,7 +3557,9 @@ img {
         margin: 0 }
 
     .founder-card,
-    .evp-card {
+    .evp-card,
+    .legal-owner-card,
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -3347,18 +3568,25 @@ img {
         margin: 0 }
 
     .founder-card .team-image,
-    .founder-card .team-image-placeholder,
     .evp-card .team-image,
-    .evp-card .team-image-placeholder {
+    .legal-owner-card .team-image,
+    .business-manager-card .team-image {
+        border-width: 3px }
+
+    .founder-card .team-image-placeholder,
+    .evp-card .team-image-placeholder,
+    .legal-owner-card .team-image-placeholder,
+    .business-manager-card .team-image-placeholder {
         width: 80px;
         height: 80px;
         border-width: 3px }
 
     .founder-card .team-image-placeholder i,
-    .evp-card .team-image-placeholder i {
+    .evp-card .team-image-placeholder i,
+    .legal-owner-card .team-image-placeholder i,
+    .business-manager-card .team-image-placeholder i {
         font-size: 2rem }
 
-    .team-image,
     .team-image-placeholder {
         width: 100px;
         height: 100px }
@@ -3428,8 +3656,6 @@ img {
         padding-right: 1.5rem }
 
     .dept-card {
-        width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         padding: 1.5rem }
 
@@ -3635,18 +3861,25 @@ img {
         font-size: 0.8rem }
 
     .founder-card .team-image,
-    .founder-card .team-image-placeholder,
     .evp-card .team-image,
-    .evp-card .team-image-placeholder {
+    .legal-owner-card .team-image,
+    .business-manager-card .team-image {
+        border-width: 3.5px }
+
+    .founder-card .team-image-placeholder,
+    .evp-card .team-image-placeholder,
+    .legal-owner-card .team-image-placeholder,
+    .business-manager-card .team-image-placeholder {
         width: 90px;
         height: 90px;
         border-width: 3.5px }
 
     .founder-card .team-image-placeholder i,
-    .evp-card .team-image-placeholder i {
+    .evp-card .team-image-placeholder i,
+    .legal-owner-card .team-image-placeholder i,
+    .business-manager-card .team-image-placeholder i {
         font-size: 2.25rem }
 
-    .team-image,
     .team-image-placeholder {
         width: 110px;
         height: 110px }
@@ -3725,7 +3958,8 @@ img {
     .value-item,
     .vm-card,
     .brand-card,
-    .dept-card {
+    .dept-card,
+    .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem }
 
@@ -3868,7 +4102,6 @@ img {
     .brand-image-wrapper {
         height: 190px }
 
-    .team-image,
     .team-image-placeholder {
         width: 110px;
         height: 110px }
@@ -3881,7 +4114,9 @@ img {
         gap: 1.75rem }
 
     .founder-card,
-    .evp-card {
+    .evp-card,
+    .legal-owner-card,
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -3895,8 +4130,6 @@ img {
         margin: 0 }
 
     .dept-card {
-        width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         padding: 1.75rem }
 
@@ -3947,7 +4180,8 @@ img {
     .value-item,
     .vm-card,
     .brand-card,
-    .dept-card {
+    .dept-card,
+    .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem }
 
@@ -4085,21 +4319,22 @@ img {
         grid-template-columns: 1fr }
 
     .departments-grid {
-        grid-template-columns: repeat(3, 1fr) }
+        grid-template-columns: repeat(2, 1fr) }
 
     .management-cards {
         flex-direction: column;
         gap: 2rem }
 
     .founder-card,
-    .evp-card {
+    .evp-card,
+    .legal-owner-card,
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
         box-sizing: border-box;
         padding: 2rem }
 
-    .team-image,
     .team-image-placeholder {
         width: 120px;
         height: 120px }
@@ -4117,8 +4352,6 @@ img {
         margin: 0 }
 
     .dept-card {
-        width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         padding: 2rem }
 
@@ -4248,28 +4481,43 @@ img {
         padding: 5rem 0 }
 
     .program-card {
-        padding: 3rem 2.5rem }
+        padding: 2rem 1.5rem }
+
+    .program-image-wrapper {
+        height: 220px;
+        padding: 1rem }
 
     .program-card h3 {
-        font-size: 1.4rem }
+        font-size: 1.15rem }
 
     .program-description {
-        font-size: 0.9rem }
+        font-size: 0.85rem }
+
+    .program-benefits h4 {
+        font-size: 0.8rem }
 
     .benefits-list {
-        grid-template-columns: repeat(2, 1fr) }
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem }
+
+    .benefits-list li {
+        font-size: 0.75rem }
 
     .program-stats {
-        gap: 2.5rem }
+        gap: 2rem }
 
     .program-stat-number {
-        font-size: 1.4rem }
+        font-size: 1.2rem }
+
+    .program-link {
+        font-size: 0.95rem;
+        padding: 0.9rem 2rem }
 
     .team {
         padding: 5rem 0 1rem }
 
     .management-section {
-        margin-bottom: 4rem }
+        margin-bottom: 0 }
 
     .management-title {
         font-size: 1.4rem }
@@ -4283,7 +4531,9 @@ img {
         min-width: 280px }
 
     .founder-card,
-    .evp-card {
+    .evp-card,
+    .legal-owner-card,
+    .business-manager-card {
         max-width: 700px !important;
         min-width: 600px !important }
 
@@ -4396,7 +4646,7 @@ img {
             padding: 6rem 0 1rem }
 
         .management-section {
-            margin-bottom: 5rem }
+            margin-bottom: 0 }
 
         .management-title {
             font-size: 1.5rem }
@@ -4527,7 +4777,7 @@ img {
             padding: 6.5rem 0 1rem }
 
         .management-section {
-            margin-bottom: 5rem }
+            margin-bottom: 0 }
 
         .management-title {
             font-size: 1.5rem }

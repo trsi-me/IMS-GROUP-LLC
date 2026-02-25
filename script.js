@@ -145,8 +145,9 @@ function initContactForm() {
         };
 
         const submitButton = form.querySelector('.submit-button');
+        const btnText = submitButton?.querySelector('.submit-btn-text');
         submitButton.disabled = true;
-        submitButton.textContent = messages[lang].sending;
+        if (btnText) btnText.textContent = messages[lang].sending;
 
         try {
             const response = await sendContactRequest(formData);
@@ -163,7 +164,7 @@ function initContactForm() {
             showMessage(messages[lang].error, 'error');
         } finally {
             submitButton.disabled = false;
-            submitButton.textContent = messages[lang].submit;
+            if (btnText) btnText.textContent = messages[lang].submit;
         }
     });
 }
