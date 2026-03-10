@@ -2537,7 +2537,7 @@ img {
     gap: 2rem;
     padding: 0 3rem }
 
-.founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+.founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
     max-width: 100% !important;
     min-width: 0 !important;
     width: 100%;
@@ -3483,25 +3483,25 @@ img {
     .management-title {
         font-size: 1.1rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         padding: 0.875rem !important }
 
-    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image {
+    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image, .motion-designer-card .team-image {
         border-width: 3px }
 
-    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder {
+    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder, .motion-designer-card .team-image-placeholder {
         width: 60px; height: 60px;
         border-width: 3px }
 
-    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i {
+    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i, .motion-designer-card .team-image-placeholder i {
         font-size: 1.5rem }
 
-    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3 { font-size: 0.8rem }
+    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3, .motion-designer-card h3 { font-size: 0.8rem }
 
-    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role {
+    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role, .motion-designer-card .team-role {
         font-size: 0.75rem }
 
-    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description {
+    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description, .motion-designer-card .team-description {
         font-size: 0.7rem }
 
     .dept-card {
@@ -3772,7 +3772,7 @@ img {
         padding: 1.25rem;
         margin: 0 }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -4324,7 +4324,7 @@ img {
         padding: 1.25rem;
         margin: 0 }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -4332,15 +4332,15 @@ img {
         padding: 1.25rem;
         margin: 0 }
 
-    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image {
+    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image, .motion-designer-card .team-image {
         border-width: 3px }
 
-    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder {
+    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder, .motion-designer-card .team-image-placeholder {
         width: 80px;
         height: 80px;
         border-width: 3px }
 
-    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i {
+    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i, .motion-designer-card .team-image-placeholder i {
         font-size: 2rem }
 
     .team-image-placeholder {
@@ -4589,15 +4589,15 @@ img {
 
     .program-stat-label { font-size: 0.8rem }
 
-    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image {
+    .founder-card .team-image, .evp-card .team-image, .legal-owner-card .team-image, .business-manager-card .team-image, .motion-designer-card .team-image {
         border-width: 3.5px }
 
-    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder {
+    .founder-card .team-image-placeholder, .evp-card .team-image-placeholder, .legal-owner-card .team-image-placeholder, .business-manager-card .team-image-placeholder, .motion-designer-card .team-image-placeholder {
         width: 90px;
         height: 90px;
         border-width: 3.5px }
 
-    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i {
+    .founder-card .team-image-placeholder i, .evp-card .team-image-placeholder i, .legal-owner-card .team-image-placeholder i, .business-manager-card .team-image-placeholder i, .motion-designer-card .team-image-placeholder i {
         font-size: 2.25rem }
 
     .team-image-placeholder {
@@ -4821,7 +4821,7 @@ img {
         grid-template-columns: 1fr;
         gap: 1.75rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5024,7 +5024,7 @@ img {
         grid-template-columns: 1fr;
         gap: 2rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5236,7 +5236,7 @@ img {
         grid-template-columns: 1fr;
         gap: 2rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important }
 
@@ -5563,7 +5563,7 @@ img {
         max-width: 260px;
         min-width: 240px }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important }
 
@@ -5822,7 +5822,7 @@ img {
     .team-card {
         max-width: 320px }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 700px !important;
         min-width: 600px !important }
 
@@ -6005,7 +6005,7 @@ img {
         max-width: 320px;
         padding: 1.75rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
         max-width: 700px !important;
         min-width: 600px !important }
 
