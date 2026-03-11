@@ -7984,23 +7984,30 @@ img {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 424px) {
+@media screen and (min-width: 375px) and (max-width: 399px) {
     .management-cards {
-        --team-card-size: 300px !important;
+        --team-card-size: 330px !important;
         grid-template-columns: repeat(1, var(--team-card-size)) !important
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 425px) {
     .management-cards {
         --team-card-size: 350px !important;
         grid-template-columns: repeat(1, var(--team-card-size)) !important
     }
 }
 
+@media screen and (min-width: 426px) and (max-width: 767.98px) {
+    .management-cards {
+        --team-card-size: 400px !important;
+        grid-template-columns: repeat(1, var(--team-card-size)) !important
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .management-cards {
-        --team-card-size: 335px !important;
+        --team-card-size: 365px !important;
         grid-template-columns: repeat(2, var(--team-card-size)) !important
     }
 }
