@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initNavbarScroll();
     initLanguageSelector();
     initFooterLanguageLinks();
+    initTeamBioToggle();
     updateCopyrightYear();
 });
 
@@ -431,6 +432,17 @@ function initFooterLanguageLinks() {
             if (url) {
                 window.location.href = url;
             }
+        });
+    });
+}
+
+function initTeamBioToggle() {
+    document.querySelectorAll('.team-bio-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var card = this.closest('.team-card');
+            var isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            card.classList.toggle('team-bio-expanded', !isExpanded);
         });
     });
 }
