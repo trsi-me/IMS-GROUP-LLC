@@ -2224,7 +2224,9 @@ img {
         width: 340px
     }
 
-    .partnership-icon { font-size: 3rem }
+    .partnership-icon {
+        font-size: 3rem
+    }
 
     .partnership-card h3 {
         font-size: 1.25rem;
@@ -3003,7 +3005,7 @@ img {
 
 .team.team-page,
 .partnerships.partnerships-page {
-    padding-top: 8rem;
+    padding-top: 10rem;
     min-height: 100vh
 }
 
@@ -3011,7 +3013,7 @@ img {
 
     .team.team-page,
     .partnerships.partnerships-page {
-        padding-top: 4rem
+        padding-top: 6rem
     }
 }
 
@@ -3050,26 +3052,52 @@ img {
 
 
 .members-leadership-intro {
-    margin: 0 0 2.5rem;
-    text-align: center
+    margin: 0 auto 2.5rem;
+    margin-inline: 1rem;
+    width: fit-content;
+    max-width: calc(100% - 2rem);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-inline-start: 3px solid rgba(245, 130, 32, 0.4);
+    background: rgba(255, 255, 255, 0.04)
 }
 
 .members-divider-intro {
-    margin: 4rem 0 2.5rem;
-    padding-top: 4rem;
-    border-top: 1px solid var(--glass-border);
-    text-align: center
+    margin: 5.5rem auto 2.5rem;
+    margin-inline: 1rem;
+    width: fit-content;
+    max-width: calc(100% - 2rem);
+    padding: 1rem 1.25rem;
+    padding-top: 2rem;
+    border-top: none;
+    text-align: center;
+    border-inline-start: 3px solid rgba(245, 130, 32, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+    position: relative
+}
+
+.members-divider-intro::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.25);
+    pointer-events: none
 }
 
 .members-leadership-intro-text,
 .members-divider-intro-text {
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: var(--font-weight-medium);
     color: var(--text-secondary);
     line-height: 1.9;
     max-width: 52rem;
-    margin: 0 auto;
-    padding: 0 1rem
+    margin: 0;
+    padding: 0
 }
 
 .former-members-cards {
@@ -3077,6 +3105,19 @@ img {
     padding-top: 0
 }
 
+@media screen and (min-width: 769px) {
+    .members-leadership-intro,
+    .members-divider-intro {
+        margin-inline: auto
+    }
+
+    .members-divider-intro::before {
+        width: 100vw;
+        max-width: none;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+}
 
 @media screen and (max-width: 768px) {
     .members-section-title {
@@ -3088,13 +3129,10 @@ img {
         margin: 3rem 0 2rem
     }
 
-    .members-leadership-intro {
-        margin: 3rem 0 2rem
-    }
 
     .members-divider-intro {
-        margin: 3rem 0 2rem;
-        padding-top: 3rem
+        margin: 4rem 1rem 2rem;
+        padding-top: 1rem
     }
 
     .members-divider-intro-text,
@@ -3125,7 +3163,7 @@ img {
 }
 
 .executive-interface-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: var(--font-weight-bold);
     color: var(--text);
     text-align: center;
@@ -3378,7 +3416,9 @@ img {
         height: 100px
     }
 
-    .team-image-placeholder i { font-size: 3rem }
+    .team-image-placeholder i {
+        font-size: 3rem
+    }
 
     .team-header {
         display: flex;
@@ -4376,17 +4416,17 @@ img {
     }
 
     .members-leadership-intro {
-        margin: 2rem 0 1.5rem
+        margin: 2rem 1rem 1.5rem
     }
 
     .members-divider-intro {
-        margin: 2rem 0 1.5rem;
-        padding-top: 2rem
+        margin: 3rem 1rem 1.5rem;
+        padding-top: 0.75rem
     }
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         padding: 0 0.5rem;
         line-height: 1.8
     }
@@ -4416,7 +4456,7 @@ img {
     }
 
     .executive-interface-title {
-        font-size: 1.1rem
+        font-size: 0.8rem
     }
 
     .values-title::after,
@@ -5458,7 +5498,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 0.9rem
+        font-size: 0.75rem
     }
 
     .about-highlights {
@@ -5884,7 +5924,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1rem
+        font-size: 0.9rem
     }
 
     .value-item {
@@ -6258,7 +6298,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1.05rem
+        font-size: 0.95rem
     }
 
     .values-grid {
@@ -6403,7 +6443,6 @@ img {
     .value-item,
     .vm-card,
     .brand-card,
-    .dept-card,
     .management-intro-card {
         margin-left: 0.5rem;
         margin-right: 0.5rem
@@ -6601,7 +6640,9 @@ img {
         height: 120px
     }
 
-    .team-image-placeholder i { font-size: 3rem }
+    .team-image-placeholder i {
+        font-size: 3rem
+    }
 
     .arrow-connector {
         transform: rotate(90deg)
@@ -6610,8 +6651,6 @@ img {
     .departments-grid {
         width: 100%;
         box-sizing: border-box;
-        padding: 0;
-        margin: 0
     }
 
     .dept-card {
@@ -6832,7 +6871,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1.15rem
+        font-size: 1rem
     }
 
     .cta-button {
@@ -7070,7 +7109,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1.1rem
+        font-size: 0.9rem
     }
 
     .old-identity-section {
@@ -7087,7 +7126,7 @@ img {
 
     .values-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem
+        gap: 1rem
     }
 
     .value-item {
@@ -7179,7 +7218,7 @@ img {
 
     .brands-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem
+        gap: 1rem
     }
 
     .brand-card {
@@ -7285,7 +7324,7 @@ img {
 
     .management-cards {
         grid-template-columns: 1fr;
-        gap: 2rem
+        gap: 1rem
     }
 
     .team-card h3 {
@@ -7310,7 +7349,7 @@ img {
 
     .departments-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem
+        gap: 1rem
     }
 
     .dept-card {
@@ -7511,18 +7550,40 @@ img {
         display: contents
     }
 
-    .hero-content .hero-badge { order: 1 }
-    .hero-content .hero-title { order: 2; text-align: right }
-    .hero-content .hero-subtitle { order: 3; text-align: right }
-    .hero-content .hero-stats { order: 4 }
-    .hero-image { order: 5 }
-    .hero-container .cta-button { order: 6; justify-self: center }
+    .hero-content .hero-badge {
+        order: 1
+    }
+
+    .hero-content .hero-title {
+        order: 2;
+        text-align: right
+    }
+
+    .hero-content .hero-subtitle {
+        order: 3;
+        text-align: right
+    }
+
+    .hero-content .hero-stats {
+        order: 4
+    }
+
+    .hero-image {
+        order: 5
+    }
+
+    .hero-container .cta-button {
+        order: 6;
+        justify-self: center
+    }
 
     .hero {
         padding: 5.5rem 2.5rem 4rem
     }
 
-    .hero-title { font-size: 3rem }
+    .hero-title {
+        font-size: 3rem
+    }
 
     .hero-subtitle {
         font-size: 1.4rem;
@@ -7559,7 +7620,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1.2rem
+        font-size: 1.05rem
     }
 
     .values-grid {
@@ -7728,7 +7789,9 @@ img {
         gap: 3.5rem
     }
 
-    .stat-number { font-size: 3rem }
+    .stat-number {
+        font-size: 3rem
+    }
 
     .section-badge {
         margin-bottom: 1.5rem
@@ -7752,7 +7815,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1.2rem
+        font-size: 1.1rem
     }
 
     .values-grid {
@@ -7903,7 +7966,9 @@ img {
         font-size: 1.3rem
     }
 
-    .section-title { font-size: 3rem }
+    .section-title {
+        font-size: 3rem
+    }
 
     .about-intro {
         font-size: 1.35rem
@@ -7911,7 +7976,7 @@ img {
 
     .members-leadership-intro-text,
     .members-divider-intro-text {
-        font-size: 1.2rem
+        font-size: 1.05rem
     }
 
     .container {
@@ -7991,23 +8056,16 @@ img {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 425px) {
+@media screen and (min-width: 400px) and (max-width: 767.98px) {
     .management-cards {
         --team-card-size: 350px !important;
         grid-template-columns: repeat(1, var(--team-card-size)) !important
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 767.98px) {
-    .management-cards {
-        --team-card-size: 400px !important;
-        grid-template-columns: repeat(1, var(--team-card-size)) !important
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .management-cards {
-        --team-card-size: 365px !important;
+        --team-card-size: 340px !important;
         grid-template-columns: repeat(2, var(--team-card-size)) !important
     }
 }
@@ -8020,6 +8078,10 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
+    .executive-interface-title {
+        font-size: 1.45rem
+    }
+
     .management-cards {
         grid-template-columns: repeat(4, minmax(0, 1fr)) !important
     }
@@ -8027,6 +8089,36 @@ img {
     .management-cards .team-card {
         width: 100% !important;
         max-width: 100% !important
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 374px) {
+    .executive-interface-title {
+        font-size: 0.9rem
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 399px) {
+    .executive-interface-title {
+        font-size: 1rem
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 767.98px) {
+    .executive-interface-title {
+        font-size: 1.05rem
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .executive-interface-title {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .executive-interface-title {
+        font-size: 1.35rem
     }
 }
 
