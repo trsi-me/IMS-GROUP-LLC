@@ -3724,10 +3724,8 @@ img {
 }
 
 .dept-subtitle {
-    font-size: 0.9rem;
     color: var(--accent);
-    font-weight: var(--font-weight-medium);
-    margin-bottom: 1.25rem
+    font-weight: var(--font-weight-medium)
 }
 
 .dept-description {
@@ -4282,56 +4280,6 @@ img {
         min-height: 1.25rem
     }
 
-    .footer-logo-img {
-        width: 90px
-    }
-
-    .footer-logo h3 {
-        font-size: 0.8rem;
-        font-weight: var(--font-weight-bold);
-        color: var(--text);
-        margin-bottom: 0.5rem
-    }
-
-    .footer-section h4 {
-        font-size: 0.7rem;
-        font-weight: var(--font-weight-bold);
-        color: var(--text);
-        margin-bottom: 0.5rem;
-        position: relative;
-        padding-bottom: 0.35rem
-    }
-
-    .footer-text {
-        font-size: 0.6rem;
-        line-height: 1.6;
-        color: var(--muted);
-        padding: 0 0.75rem
-    }
-
-    .footer-about {
-        font-size: 0.65rem
-    }
-
-    .footer-links a,
-    .footer-contact a {
-        font-size: 0.65rem
-    }
-
-    .footer-links,
-    .footer-contact {
-        gap: 0.5rem
-    }
-
-    .footer-content {
-        padding: 0 0.75rem;
-        gap: 1rem
-    }
-
-    .social-link i {
-        font-size: 1.1rem
-    }
-
     .navbar {
         font-size: 0.9rem
     }
@@ -4648,11 +4596,7 @@ img {
     }
 
     .dept-card h3 {
-        font-size: 1rem
-    }
-
-    .dept-subtitle {
-        font-size: 0.8rem
+        font-size: 0.9rem
     }
 
     .dept-description {
@@ -5082,7 +5026,7 @@ img {
 
     .dept-card {
         box-sizing: border-box;
-        padding: 1.5rem
+        padding: 1rem
     }
 
     .contact-content {
@@ -5322,6 +5266,12 @@ img {
 
 .footer-logo-img {
     width: 150px
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .contact {
+        padding-top: 4rem
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
@@ -5576,14 +5526,17 @@ img {
     }
 
     .dept-card h3 {
-        font-size: 0.95rem
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem
     }
+
+    .dept-subtitle { font-size: 0.8rem }
 
     .dept-icon {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
-        margin-bottom: 1rem
+        margin-bottom: 0.5rem
     }
 
     .dept-description {
@@ -5814,7 +5767,7 @@ img {
 
     .dept-card {
         box-sizing: border-box;
-        padding: 1.5rem
+        padding: 1.2rem
     }
 
     .contact-content {
@@ -5860,13 +5813,7 @@ img {
 }
 
 @media screen and (min-width: 376px) and (max-width: 500px) {
-    .management-intro-card {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem
-    }
-
-    .executive-interface-section .management-cards,
-    .management-cards {
+    .executive-interface-section .management-cards, .management-cards {
         grid-template-columns: 1fr
     }
 
@@ -5976,15 +5923,10 @@ img {
         width: 60px;
         height: 60px;
         font-size: 2rem;
-        margin-bottom: 1.25rem
     }
 
     .dept-description {
         font-size: 0.95rem
-    }
-
-    .dept-card {
-        padding: 1.75rem
     }
 
     .flow-title {
@@ -8019,7 +7961,18 @@ img {
     padding: 0 !important
 }
 
+@media screen and (min-width: 425px) {
+    .dept-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0.5rem
+    }
+}
+
 @media screen and (max-width: 425px) {
+    .dept-subtitle {
+        margin-bottom: 0.5rem
+    }
+
     .partnership-image-wrapper {
         margin: 0;
         margin-bottom: 0
@@ -8032,6 +7985,68 @@ img {
 
     .team-info {
         padding: 0.75rem
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .dept-card h3 {
+        margin-bottom: 0.25rem
+    }
+
+    .dept-subtitle {
+        font-size: 0.75rem
+    }
+
+    .footer-logo-img {
+        width: 150px;
+        margin-bottom: 0.5rem;
+        margin-right: -10px;
+    }
+
+    .footer-logo h3 {
+        font-size: 0.8rem;
+        font-weight: var(--font-weight-bold);
+        color: var(--text);
+        margin-bottom: 0.5rem
+    }
+
+    .footer-section h4 {
+        font-size: 0.7rem;
+        font-weight: var(--font-weight-bold);
+        color: var(--text);
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-bottom: 0.35rem
+    }
+
+    .footer-text {
+        font-size: 0.6rem;
+        line-height: 1.6;
+        color: var(--muted);
+        padding: 0 0.75rem
+    }
+
+    .footer-about {
+        font-size: 0.65rem
+    }
+
+    .footer-links a,
+    .footer-contact a {
+        font-size: 0.65rem
+    }
+
+    .footer-links,
+    .footer-contact {
+        gap: 0
+    }
+
+    .footer-content {
+        padding: 2rem 0.75rem;
+        gap: 1rem
+    }
+
+    .social-link i {
+        font-size: 1.1rem
     }
 }
 
