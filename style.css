@@ -3222,8 +3222,7 @@ img {
 .founder-card,
 .evp-card,
 .legal-owner-card,
-.business-manager-card,
-.motion-designer-card {
+.business-manager-card {
     max-width: 100% !important;
     min-width: 0 !important;
     width: 100%;
@@ -4563,24 +4562,21 @@ img {
     .founder-card h3,
     .evp-card h3,
     .legal-owner-card h3,
-    .business-manager-card h3,
-    .motion-designer-card h3 {
+    .business-manager-card h3 {
         font-size: 0.8rem
     }
 
     .founder-card .team-role,
     .evp-card .team-role,
     .legal-owner-card .team-role,
-    .business-manager-card .team-role,
-    .motion-designer-card .team-role {
+    .business-manager-card .team-role {
         font-size: 0.75rem
     }
 
     .founder-card .team-description,
     .evp-card .team-description,
     .legal-owner-card .team-description,
-    .business-manager-card .team-description,
-    .motion-designer-card .team-description {
+    .business-manager-card .team-description {
         font-size: 0.7rem
     }
 
@@ -4936,8 +4932,7 @@ img {
     .founder-card,
     .evp-card,
     .legal-owner-card,
-    .business-manager-card,
-    .motion-designer-card {
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5435,11 +5430,7 @@ img {
         font-size: 1.2rem
     }
 
-    .section-description {
-        font-size: 0.75rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem
-    }
+    .section-description { font-size: 0.75rem }
 
     .about-intro {
         font-size: 0.85rem !important;
@@ -6309,8 +6300,7 @@ img {
     .founder-card,
     .evp-card,
     .legal-owner-card,
-    .business-manager-card,
-    .motion-designer-card {
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -6568,8 +6558,7 @@ img {
     .founder-card,
     .evp-card,
     .legal-owner-card,
-    .business-manager-card,
-    .motion-designer-card {
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -6831,8 +6820,7 @@ img {
     .founder-card,
     .evp-card,
     .legal-owner-card,
-    .business-manager-card,
-    .motion-designer-card {
+    .business-manager-card {
         max-width: 100% !important;
         min-width: auto !important
     }
@@ -7956,8 +7944,7 @@ img {
 .founder-card,
 .evp-card,
 .legal-owner-card,
-.business-manager-card,
-.motion-designer-card {
+.business-manager-card {
     padding: 0 !important
 }
 
