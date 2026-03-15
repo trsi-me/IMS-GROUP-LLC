@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initFooterLanguageLinks();
     initTeamBioToggle();
     updateCopyrightYear();
+    initCountUp();
 });
 
 function initNavigation() {
@@ -333,6 +334,48 @@ function showMessage(message, type) {
     }, 5000);
 
     formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function initCountUp() {
+    var countEls = document.querySelectorAll('.stat-count');
+    if (!countEls.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var el = entry.target;
+            if (el.classList.contains('stat-count-done')) return;
+            el.classList.add('stat-count-done');
+
+            var target = parseInt(el.getAttribute('data-count-to'), 10);
+            var suffix = el.getAttribute('data-suffix') || '';
+            var formatComma = el.getAttribute('data-format') === 'comma';
+            var duration = 1800;
+            var start = 0;
+            var startTime = null;
+
+            function easeOutQuart(t) {
+                return 1 - Math.pow(1 - t, 4);
+            }
+
+            function update(currentTime) {
+                if (!startTime) startTime = currentTime;
+                var elapsed = currentTime - startTime;
+                var progress = Math.min(elapsed / duration, 1);
+                var eased = easeOutQuart(progress);
+                var current = Math.floor(start + (target - start) * eased);
+                var display = formatComma ? current.toLocaleString('en-US') : String(current);
+                el.textContent = display + suffix;
+                if (progress < 1) requestAnimationFrame(update);
+            }
+
+            requestAnimationFrame(update);
+        });
+    }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+
+    countEls.forEach(function (el) {
+        observer.observe(el);
+    });
 }
 
 document.addEventListener('keydown', function (e) {

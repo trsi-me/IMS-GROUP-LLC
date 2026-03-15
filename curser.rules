@@ -1,0 +1,56 @@
+# =============================
+# قواعد CSS متقدمة لـ Cursor
+# =============================
+
+css:
+  # إزالة الفاصلة المنقوطة الأخيرة تلقائيًا
+  omit_semicolon: true
+
+  # إذا العنصر يحتوي على خاصية واحدة فقط، اجعله سطر واحد
+  single_property_inline: true
+
+  # دمج الخصائص الطويلة إلى shorthand تلقائيًا
+  auto_shorthand: true
+
+  # دمج العناصر التي لها نفس القيم لتجنب التكرار
+  merge_identical_rules: true
+
+  # إذا تم استدعاء أكثر من selector، اجعلهم في سطر واحد
+  multiple_selectors_inline: true
+
+  # ترتيب الخصائص بشكل منطقي واحترافي
+  property_order:
+    - display
+    - position
+    - top
+    - right
+    - bottom
+    - left
+    - margin
+    - padding
+    - border
+    - width
+    - height
+    - font
+    - color
+    - text-align
+    - background
+    - box-shadow
+    - opacity
+
+  # تنسيق CSS مختصر لكل selector
+  minify_selectors: true
+
+  # تحويل الخصائص الفردية إلى shorthand تلقائيًا
+  shorthand_rules:
+    padding: [padding-top, padding-right, padding-bottom, padding-left]
+    margin: [margin-top, margin-right, margin-bottom, margin-left]
+    border-width: [border-top-width, border-right-width, border-bottom-width, border-left-width]
+    border-color: [border-top-color, border-right-color, border-bottom-color, border-left-color]
+    border-style: [border-top-style, border-right-style, border-bottom-style, border-left-style]
+
+  # قواعد إضافية لتحسين الكود
+  optimize:
+    remove_duplicate_properties: true
+    trim_whitespace: true
+    inline_single_property: true
