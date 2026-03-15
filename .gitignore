@@ -1,0 +1,19 @@
+# Cursor / Rules
+curser.rules
+*.rules
+.cursor/
+.cursorrules
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
