@@ -86,7 +86,21 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px }
+    font-size: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) rgba(245, 130, 32, 0.15) }
+
+html::-webkit-scrollbar { width: 10px }
+
+html::-webkit-scrollbar-track {
+    background: rgba(245, 130, 32, 0.1);
+    border-radius: 5px }
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent), var(--accent-hover));
+    border-radius: 5px }
+
+html::-webkit-scrollbar-thumb:hover { background: var(--accent-hover) }
 
 body {
     font-family: var(--font-family);
@@ -1092,6 +1106,8 @@ img {
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: none;
+    overscroll-behavior-inline: none;
     scrollbar-width: thin;
     scrollbar-color: var(--accent) rgba(245, 130, 32, 0.15);
     margin: 0;
@@ -6526,22 +6542,27 @@ img {
 
 @media screen and (max-width: 320px) {
     .management-cards {
-        --team-card-size: 250px !important;
+        --team-card-size: 280px !important;
         grid-template-columns: repeat(1, var(--team-card-size)) !important }}
 
-@media screen and (min-width: 321px) and (max-width: 374px) {
-    .management-cards {
-        --team-card-size: 250px !important;
-        grid-template-columns: repeat(1, var(--team-card-size)) !important }}
-
-@media screen and (min-width: 375px) and (max-width: 424px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
     .management-cards {
         --team-card-size: 300px !important;
         grid-template-columns: repeat(1, var(--team-card-size)) !important }}
 
+@media screen and (min-width: 375px) and (max-width: 410px) {
+    .management-cards {
+        --team-card-size: 330px !important;
+        grid-template-columns: repeat(1, var(--team-card-size)) !important }}
+
+@media screen and (min-width: 410px) and (max-width: 424px) {
+    .management-cards {
+        --team-card-size: 360px !important;
+        grid-template-columns: repeat(1, var(--team-card-size)) !important }}
+
 @media screen and (min-width: 425px) and (max-width: 767px) {
     .management-cards {
-        --team-card-size: 350px !important;
+        --team-card-size: 380px !important;
         grid-template-columns: repeat(1, var(--team-card-size)) !important }}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
