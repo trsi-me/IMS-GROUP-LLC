@@ -135,7 +135,7 @@ h2,
 h3,
 h4,
 h5,
-h6, .section-title, .section-badge, .nav-link, .cta-button, .submit-button, .brand-link, .program-link, .contact-link, .footer-links a, .footer-contact a, .team-role, .team-alias, .team-birth, .dept-subtitle, .contact-alt, .form-group label, .required {
+h6, .section-title, .section-badge, .nav-link, .cta-button, .submit-button, .brand-link, .program-link, .contact-link, .footer-links a, .footer-contact a, .team-role, .team-alias, .team-location, .team-birth, .dept-subtitle, .contact-alt, .form-group label, .required {
     text-align: inherit }
 
 img {
@@ -2908,7 +2908,7 @@ img {
     width: 100%;
     box-sizing: border-box }
 
-.founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
+.founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
     max-width: 100% !important;
     min-width: 0 !important;
     width: 100%;
@@ -2992,7 +2992,7 @@ img {
     padding-left: 2.5rem;
     text-align: right }
 
-.team-meta h3, .team-meta .team-role {
+.team-meta h3, .team-meta .team-role, .team-meta .team-location {
     text-align: inherit }
 
 [dir="ltr"] .team-meta {
@@ -3089,7 +3089,27 @@ img {
     font-size: 1.3rem;
     font-weight: var(--font-weight-medium);
     color: var(--accent);
-    margin-bottom: 0.5rem }
+    margin-bottom: 0.7rem }
+
+.team-location {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0.6rem;
+    line-height: 1.35 }
+
+.team-location i {
+    color: var(--accent);
+    font-size: 0.95em;
+    flex-shrink: 0;
+    opacity: 0.95 }
+
+[dir="ltr"] .team-location {
+    flex-direction: row }
 
 .team-alias {
     font-size: 1rem;
@@ -3962,6 +3982,8 @@ img {
 
     .team-alias { font-size: 0.7rem }
 
+    .team-location { font-size: 0.65rem }
+
     .team-birth { font-size: 0.65rem }
 
     .team-description { font-size: 0.7rem }
@@ -3976,11 +3998,13 @@ img {
 
     .management-title { font-size: 1.1rem }
 
-    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3, .motion-designer-card h3 { font-size: 0.8rem }
+    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3, .research-head-card h3, .motion-designer-card h3 { font-size: 0.8rem }
 
-    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role, .motion-designer-card .team-role { font-size: 0.75rem }
+    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role, .research-head-card .team-role, .motion-designer-card .team-role { font-size: 0.75rem }
 
-    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description, .motion-designer-card .team-description { font-size: 0.7rem }
+    .founder-card .team-location, .evp-card .team-location, .legal-owner-card .team-location, .business-manager-card .team-location, .research-head-card .team-location, .motion-designer-card .team-location { font-size: 0.62rem }
+
+    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description, .research-head-card .team-description, .motion-designer-card .team-description { font-size: 0.7rem }
 
     .dept-card { padding: 1rem }
 
@@ -4226,7 +4250,7 @@ img {
         min-width: auto;
         margin: 0 }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5197,7 +5221,7 @@ img {
         grid-template-columns: 1fr;
         gap: 1.75rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5412,7 +5436,7 @@ img {
         grid-template-columns: 1fr;
         gap: 2rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5620,7 +5644,7 @@ img {
         grid-template-columns: 1fr;
         gap: 2rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important }
 
@@ -6332,7 +6356,7 @@ img {
 
     .management-cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 3.5rem }
+        gap: 2rem }
 
     .departments-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -6391,7 +6415,7 @@ img {
     margin: 0 !important;
     padding: 0 !important }
 
-.team-card, .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .motion-designer-card {
+.team-card, .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
     padding: 0 !important }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
