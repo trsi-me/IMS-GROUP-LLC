@@ -1655,12 +1655,13 @@ img {
 .brand-link-hackora:hover:not(:disabled) {
     box-shadow: 0 12px 32px rgba(255, 146, 234, 0.4) !important }
 
-.brand-link-nimra {
-    background: linear-gradient(135deg, #0c5225 0%, #166534 100%) !important;
-    color: #ffffff !important }
+.brand-link-nimray {
+    background: linear-gradient(135deg, #8B1E2D 0%, #5c141f 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(139, 30, 45, 0.25) !important }
 
-.brand-link-nimra:hover:not(:disabled) {
-    box-shadow: 0 12px 32px rgba(12, 82, 37, 0.4) !important }
+.brand-link-nimray:hover:not(:disabled) {
+    box-shadow: 0 12px 32px rgba(139, 30, 45, 0.4) !important }
 
 .brand-achievements, .brand-development, .brand-history {
     margin-top: 1.5rem;
