@@ -2909,7 +2909,7 @@ img {
     width: 100%;
     box-sizing: border-box }
 
-.founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
+.founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .academic-head-card, .motion-designer-card {
     max-width: 100% !important;
     min-width: 0 !important;
     width: 100%;
@@ -3999,13 +3999,13 @@ img {
 
     .management-title { font-size: 1.1rem }
 
-    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3, .research-head-card h3, .motion-designer-card h3 { font-size: 0.8rem }
+    .founder-card h3, .evp-card h3, .legal-owner-card h3, .business-manager-card h3, .research-head-card h3, .academic-head-card h3, .motion-designer-card h3 { font-size: 0.8rem }
 
-    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role, .research-head-card .team-role, .motion-designer-card .team-role { font-size: 0.75rem }
+    .founder-card .team-role, .evp-card .team-role, .legal-owner-card .team-role, .business-manager-card .team-role, .research-head-card .team-role, .academic-head-card .team-role, .motion-designer-card .team-role { font-size: 0.75rem }
 
-    .founder-card .team-location, .evp-card .team-location, .legal-owner-card .team-location, .business-manager-card .team-location, .research-head-card .team-location, .motion-designer-card .team-location { font-size: 0.62rem }
+    .founder-card .team-location, .evp-card .team-location, .legal-owner-card .team-location, .business-manager-card .team-location, .research-head-card .team-location, .academic-head-card .team-location, .motion-designer-card .team-location { font-size: 0.62rem }
 
-    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description, .research-head-card .team-description, .motion-designer-card .team-description { font-size: 0.7rem }
+    .founder-card .team-description, .evp-card .team-description, .legal-owner-card .team-description, .business-manager-card .team-description, .research-head-card .team-description, .academic-head-card .team-description, .motion-designer-card .team-description { font-size: 0.7rem }
 
     .dept-card { padding: 1rem }
 
@@ -4251,7 +4251,7 @@ img {
         min-width: auto;
         margin: 0 }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .academic-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5222,7 +5222,7 @@ img {
         grid-template-columns: 1fr;
         gap: 1.75rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .academic-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5437,7 +5437,7 @@ img {
         grid-template-columns: 1fr;
         gap: 2rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .academic-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important;
         width: 100% !important;
@@ -5645,7 +5645,7 @@ img {
         grid-template-columns: 1fr;
         gap: 2rem }
 
-    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
+    .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .academic-head-card, .motion-designer-card {
         max-width: 100% !important;
         min-width: auto !important }
 
@@ -6416,7 +6416,7 @@ img {
     margin: 0 !important;
     padding: 0 !important }
 
-.team-card, .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .motion-designer-card {
+.team-card, .founder-card, .evp-card, .legal-owner-card, .business-manager-card, .research-head-card, .academic-head-card, .motion-designer-card {
     padding: 0 !important }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
